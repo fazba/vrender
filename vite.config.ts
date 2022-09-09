@@ -1,8 +1,13 @@
 import { defineConfig } from "vite";
-import { visualizer } from "rollup-plugin-visualizer";
+import Inspect from 'vite-plugin-inspect'
+// import { visualizer } from "rollup-plugin-visualizer";
 export default defineConfig({
   plugins: [
-    visualizer(),
+    Inspect({
+      build: true,
+      outputDir: '.vite-inspect'
+    })
+    // visualizer(),
   ],
   resolve: {
     alias: {
@@ -17,4 +22,3 @@ export default defineConfig({
     },
   },
 });
-// rewrite: path => path.replace(/^\/api/, ""),
