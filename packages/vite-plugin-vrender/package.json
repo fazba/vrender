@@ -1,0 +1,50 @@
+{
+  "name": "vite-plugin-vrender",
+  "version": "0.1.0",
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "unbuild --stub",
+    "build": "unbuild && pnpm run patch-cjs",
+    "patch-cjs": "tsx ../../scripts/patchCJS.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "node": ">= 16"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fazba/vite-plugin-vrender.git",
+    "directory": "packages/vite-plugin-render"
+  },
+  "keywords": [
+    "vite-plugin",
+    "vite",
+    "vrender"
+  ],
+  "bugs": {
+    "url": "https://github.com/fazba/vite-plugin-vrender/issues"
+  },
+  "homepage": "https://github.com/fazba/vite-plugin-vrender#readme",
+  "dependencies": {},
+  "peerDependencies": {
+    "vrender": "*",
+    "vite": "^3.0.0"
+  },
+  "devDependencies": {
+    "vite": "workspace:*",
+    "vrender": "*"
+  }
+}

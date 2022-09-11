@@ -16,7 +16,7 @@
   },
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "dev": "vite --host 0.0.0.0 --mode development",
+    "dev": "pnpm --dir packages/vite-plugin-svelte dev",
     "build": "vite build --mode production"
   },
   "dependencies": {},
