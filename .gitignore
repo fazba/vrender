@@ -3,7 +3,7 @@ node_modules
 /dist
 
 # any dist file
-dist.*
+dist
 *.zip
 *.7z
 
