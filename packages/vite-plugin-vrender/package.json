@@ -40,11 +40,9 @@
   "homepage": "https://github.com/fazba/vite-plugin-vrender#readme",
   "dependencies": {},
   "peerDependencies": {
-    "vrender": "*",
     "vite": "^3.0.0"
   },
   "devDependencies": {
-    "vite": "workspace:*",
-    "vrender": "*"
+    "vite": "workspace:*"
   }
 }

@@ -1,4 +1,15 @@
+import type { Plugin, ViteDevServer } from 'vite'
 
 
-const a = 'test index.ts'
-console.log(a)
+
+export default function vrenderPlugin(): Plugin {
+
+
+  return {
+    name: 'vite:vrender',
+    enforce: 'pre',
+    transform(code, id, opt) {
+
+    }
+  }
+}
