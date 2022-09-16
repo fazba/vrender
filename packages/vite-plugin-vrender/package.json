@@ -41,8 +41,5 @@
   "dependencies": {},
   "peerDependencies": {
     "vite": "^3.0.0"
-  },
-  "devDependencies": {
-    "vite": "workspace:*"
   }
 }
