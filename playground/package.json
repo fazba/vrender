@@ -1,0 +1,16 @@
+{
+  "name": "test-vrender",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "vue": "^3.2.37"
+  },
+  "devDependencies": {
+    "vite": "^3.1.1",
+    "vite-plugin-inspect": "0.7.1"
+  }
+}

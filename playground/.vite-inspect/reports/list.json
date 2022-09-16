@@ -1,0 +1,26 @@
+{
+  "root": "D:/资料/demo/fazba repository/vrender/playground",
+  "modules": [
+    {
+      "id": "D:/资料/demo/fazba repository/vrender/playground/node_modules/.pnpm/vite@3.1.1/node_modules/vite/dist/client/client.mjs",
+      "deps": [],
+      "plugins": [
+        "__load__",
+        "vite:client-inject",
+        "vite:import-analysis"
+      ],
+      "virtual": false
+    },
+    {
+      "id": "D:/资料/demo/fazba repository/vrender/playground/node_modules/.pnpm/vite@3.1.1/node_modules/vite/dist/client/env.mjs",
+      "deps": [],
+      "plugins": [
+        "__load__",
+        "vite:client-inject",
+        "vite:import-analysis"
+      ],
+      "virtual": false
+    }
+  ],
+  "ssrModules": []
+}

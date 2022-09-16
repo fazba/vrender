@@ -1,24 +1,21 @@
 import { defineConfig } from "vite";
 import Inspect from 'vite-plugin-inspect'
-// import { visualizer } from "rollup-plugin-visualizer";
+import vrenderPlugin from 'vite-plugin-vrender'
+
+
+
+
 export default defineConfig({
   plugins: [
+    vrenderPlugin(),
     Inspect({
       build: true,
       outputDir: '.vite-inspect'
     })
-    // visualizer(),
   ],
   resolve: {
     alias: {
-      "@": "/src",
+      "@": __dirname,
     },
-  },
-  server: {
-    proxy: {
-      "^/generatePNG": {
-        target: "http://172.10.21.103:81/",
-      },
-    },
-  },
+  }
 });
