@@ -14,8 +14,7 @@ export default function vrenderPlugin(): Plugin {
       const scriptRE = /\<script\>(\n(.*\n)*)\<\/script\>/
       const langRE = /\<script\s*(\slang\s*\=\"(\w*?)\")?\s*\>/
       //
-      console.log({ id })
-      console.log('※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※')
+      console.log({ id }); console.log('※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※※')
       if (!vrenderFileRE.test(id)) return code
       console.log({ code, id })
 
